@@ -1,0 +1,10 @@
+<form>
+    <p id="edit-title">Use the form below to update your profile.</p>
+    <label for="nameInput">Name</label>
+    <input id="nameInput" type="text" ng-model="$ctrl.user.name">
+    <label for="contactInput">Contact</label>
+    <input id="contactInput" type="text" ng-model="$ctrl.user.contact">
+    <label for="textArea">Bio</label>
+    <input id="textArea" type="text" ng-model="$ctrl.user.bio">
+    <button ng-click="$ctrl.passData($ctrl.userProfile);">Update</button>
+</form>
