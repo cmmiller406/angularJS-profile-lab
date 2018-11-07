@@ -4,10 +4,12 @@ const profile = {
     templateUrl: `app/profile/profile.html`,
     controller: ["ProfileService", function(ProfileService) {
         const vm = this;
-        vm.info = ProfileService.getUserProfile();
+        vm.userInfo = ProfileService.getUserInfo();
+        vm.loadEdit = () => {
+            ProfileService.loadEdit();
+        }
     }]
 };
-
 
 angular
     .module("App")

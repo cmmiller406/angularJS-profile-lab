@@ -10,20 +10,41 @@ input {
     margin-bottom: 20px;
     margin-top: 5px;
     border-radius: 15px;
+    border: 1px solid black;
 }
 
 label {
     color: #1ECEFD;
 }
 
-form, .main-container {
+form {
     width: 400px;
+    margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
     padding: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.main-container {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 #edit-title {
@@ -35,27 +56,34 @@ button {
     color: white;
     padding: 14px;
     border-radius: 15px;
-
+    font-size: 20px;
 }
 
 img {
-    height: 300px;
-    width: 350px;
-    border-radius: 15px;
+    height: 350px;
+    width: 400px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .image-container {
-    width: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .edit-btn {
     width: 95%;
+    align-self: center;
+    margin-bottom: 30px;
 }
 
-h1{
+h1 {
     font-size: 30px;
+    margin-bottom: 5px;
 }
 
 #contact {
     color: #eee;
+    margin-top: 5px;
 }
+

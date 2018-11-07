@@ -1,11 +1,11 @@
 <section class="main-container">
     <section class="image-container">
-        <img src="gusgus.jpg">
+        <img ng-src="gusgus.jpg">
     </section>
-    <section>
-        <h1>{{ $ctrl.user.name }}</h1>
-        <p id="contact">{{ $ctrl.user.contact }}</p>
-        <p id="bio">{{ $ctrl.user.bio }}</p>
-        <button class="edit-btn">Edit</button>
+    <section class="profile-container">
+        <h1>Name: {{ $ctrl.userInfo.name }}</h1>
+        <p id="contact">Contact: {{ $ctrl.userInfo.contact }}</p>
+        <p id="bio">Bio: {{ $ctrl.userInfo.bio }}</p>
+        <button ng-click="$ctrl.loadEdit();" class="edit-btn">Edit</button>
     </section>
 </section>
